@@ -1,6 +1,6 @@
 ![GA icon](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
 # Smart Coding 101
-So coding is good in theory but it's even better in practice, so let's get coding! 
+Coding is good in theory but it's even better in practice, so let's get coding! 
 
 We are going to use an online code editor called Codepen to write our HTML and CSS. We've already made a template project for you, with all the best settings! [Click here to go to the template](http://codepen.io/ga-sg/pen/GWMwOE).
 
@@ -209,7 +209,7 @@ HTML all done! Your page should look something like this [example html page](./p
 
 Next we'll learn about CSS. If you've finished early, spend some time personalizing the content with your details,name, about, education etc.
 
-The final code should look like this:
+#### Part 1 - final code
 
 ```html
 <header>
@@ -501,9 +501,9 @@ For our last trick, let's change the `background-color` of our link-items to tha
 
 HTML & CSS done! Your page should look something like this [example web page](./part2b-complete.png)
 
-Next we'll learn how to deploy it online. If you've finished early, spend some time customising the designing. This [HTML Color List](https://www.w3schools.com/colors/colors_names.asp) and [Font Awesome Icons List](http://fontawesome.io/icons/) might be useful.
+Next we'll learn how to deploy it online. If you've finished early, spend some time customising the designing. This [HTML Color List](https://www.w3schools.com/colors/colors_names.asp) and [Font Awesome Icons List](http://fontawesome.io/icons/) might be useful. Also, we've included 10 different backgrounds, named `1.png` through to `10.png`, try changing the `3.png` part of the background-url in your section-header e.g. `background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/bgs/7.png");` - you can also use your own images that you have online, you just need to copy the link to them.
 
-The final code should look like this:
+#### Part 2 - final code
 
 **html**
 
@@ -670,13 +670,18 @@ footer {
 
 ---
 
-## Part 3 - TODO.
+## Part 3 - Get It Online
 
-### Setup Github Account
-Setup your github account and upload a profile picture
+Ok, so we've built our website and now we're going to deploy it online. As this is a 'smart' coding class, we're going to do that in a very clever and easy way. The first step is to setup an account on Github.com.
 
-> **Top Tip.** We can now use that profile picture on the website, with the following link:
-https://github.com/your-github-username.png You can update the CSS like so..
+### Setting Up Your Github Account
+Github is free to register, so [Signup now](https://github.com/). 
+
+Once you have your account, be sure to [upload a profile picture](https://github.com/settings/profile) so that everyone can recognise you, it also let's us do a very cool trick.
+
+We can now use that profile picture on our website. Github allows us to reference the image by creating a URL that includes your username followed by .png, like so: `https://github.com/your-github-username.png`
+
+Go back to Codepen and let's add this to the CSS for our header. __Tip. Don't forget to replace 'your-github-username' with your actual github username that you just created__
 
 ```css
 .main-header {
@@ -688,12 +693,43 @@ https://github.com/your-github-username.png You can update the CSS like so..
 }
 ```
 
-To Deploy
-1. hit the export button in the bottom right corner
-2. create repo on github (of username...) with readme
-3. upload the html file and the css folder
-4. change gihub page to master branch
-5. ...
+You can also update the __a tag__ in the footer, to actually link to your Github page.
+
+```html
+<a href="https://github.com/your-github-username" class="link-item">
+  <i class="fa fa-2x fa-github-square"></i> Find me on Github
+</a>
+```
+
+### Exporting Your Website From Codepen
+Now we're ready to upload your website but we need actual html and css files files. Fortunately, we can export them directly from Codepen, just hit the export button in the bottom right corner and chose the Export .zip option.
+
+![Export From Codepen](./export-codepen.png)
+
+We now, have the html and css files we need in order to upload. 
+
+### Create A New Github Repository
+We're going to deploy our website to Github, and the first thing we need to do is create a new Repository (you can think of repository as another word for project). Hit the new Repository button in the top right corner of the header bar. 
+
+![New Repo on Github](./new-repo.png)
+
+You want to:
+* name your repository `your-github-username.github.io`, where your-github-username is actual github username that you just created
+* add a simple description
+* tick the box to create a README file
+* you can leave the rest of the options as default
+
+![New Repo on Github](./new-repo-part2.png)
+
+Once you've have done that you want hit the `upload` button and then drag and drop the `index.html` file and the `css` folder on to the upload window. Once they have uploaded, you can hit the commit button.
+
+![Upload on Github](./upload.png)
+
+![Upload Files to Github](./upload-part2.png)
+
+### Review
+
+That's it! It usually takes about 10 minutes (if you're lucky it might be instant) but your website should now be online at `https://your-github-username.github.io/` where your-github-username is actual github username ;-)
 
 ---
 
