@@ -1,6 +1,6 @@
 ![GA icon](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
 # Smart Coding 101
-Coding is good in theory but it's even better in practice, so let's get coding! 
+Coding is good in theory but it's even better in practice, so let's get coding!
 
 We are going to use an online code editor called Codepen to write our HTML and CSS. We've already made a template project for you, with all the best settings! [Click here to go to the template](http://codepen.io/ga-sg/pen/GWMwOE).
 
@@ -45,14 +45,14 @@ https://github.com/your-linkedin-username Find me on LinkedIn
 Made in 2hrs in General Assembly's Smart Coding 101
 ```
 
-Copy and paste the above into your HTML tab in Codepen. Oh my, all of our formatting has disappeared, to get it back we need to mark-it-up with HTML. 
+Copy and paste the above into your HTML tab in Codepen. Oh my, all of our formatting has disappeared, to get it back we need to mark-it-up with HTML.
 
-### Header, Main, Footer 
+### Header, Main, Footer
 
-Our site has three main components: 
-1. the header - where we display your name 
-2. the main - where we have all of the text 
-3. and the footer - where we have the social media links and the copyright notice. 
+Our site has three main components:
+1. the header - where we display your name
+2. the main - where we have all of the text
+3. and the footer - where we have the social media links and the copyright notice.
 
 Let's wrap each section in the coresponding html tag:  __header__ for the header, __main__ for the main, and footer for the footer.
 
@@ -79,7 +79,7 @@ Let's wrap each section in the coresponding html tag:  __header__ for the header
 
 ### Headings
 
-Wrap Your name in a __h1 tag__ as it is our main page title. 
+Wrap Your name in a __h1 tag__ as it is our main page title.
 
 ```html
 <header>
@@ -205,7 +205,7 @@ This footer information is not as important as the main site content, so let's w
 
 ### Review
 
-HTML all done! Your page should look something like this [example html page](./part1-complete.png)
+HTML all done! Your page should look something like this [example html page](./readme-images/part1-complete.png)
 
 Next we'll learn about CSS. If you've finished early, spend some time personalizing the content with your details,name, about, education etc.
 
@@ -274,7 +274,7 @@ Next we'll learn about CSS. If you've finished early, spend some time personaliz
 ---
 
 ## Part 2: Adding Style To Content With CSS (30 minutes)
-Now that we've learnt about CSS, let's add some style to our site. In your CSS file or CSS tab in Codepen let's add the following rules. 
+Now that we've learnt about CSS, let's add some style to our site. In your CSS file or CSS tab in Codepen let's add the following rules.
 
 ### Basic CSS
 
@@ -289,7 +289,7 @@ h1 {
   line-height: 50px;
   letter-spacing: 5px;
   text-align: center;
-  margin: 0; 
+  margin: 0;
 }
 ```
 
@@ -323,7 +323,7 @@ section {
   margin: auto;
   background-color: white;
 }
-``` 
+```
 
 #### footer
 For our footer, we also want to add some `padding` and let's also add a `border-top` 2 pixels thick, dashed and in the color of a golden rod. Lastly, let's center the text.
@@ -338,7 +338,7 @@ footer {
 
 #### Review
 
-Your page should look something like this [basic css page](./part2a-complete.png). If it does, then move straight on to part 2b and we'll get more advanced.
+Your page should look something like this [basic css page](./readme-images/part2a-complete.png). If it does, then move straight on to part 2b and we'll get more advanced.
 
 ---
 
@@ -346,7 +346,7 @@ Your page should look something like this [basic css page](./part2a-complete.png
 To take our design even further, we'll need to go back and add some class attributes to our HTML. We can then select these classes in our CSS and add more specific styling. You'll need to alternate between the HTMl and CSS tabs for the steps below.
 
 #### Main Header
-Let's add a `main-header` class to the first header on the page, so we know it is the main one. 
+Let's add a `main-header` class to the first header on the page, so we know it is the main one.
 
 We can also do something fancy by wrapping every odd word in our name in a __span tag__ tag with the class `alternate-color`.
 
@@ -371,10 +371,10 @@ Next, let's get our main-header to be a fixed `height` of 230px. We can then giv
   height: 230px;
   background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/avatar.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   position: relative;
 }
-``` 
+```
 
 Time for a cool trick. By setting the header to have a relative position, we can now position our h1 text on top of it. Let's go back to our h1 style and add a few more rules. Let's set the `position` to be absolute (i.e. we're going to provide instructions on where it should go). Now we'll tell it to anchor itself 0 pixels from the `left`, `right` and `bottom` of the first relative positioned parent i.e. our header. Let's also set the `opacity` to 0.8, which will make it slightly transparent.
 
@@ -386,8 +386,8 @@ h1 {
   line-height: 50px;
   letter-spacing: 5px;
   text-align: center;
-  margin: 0; 
-  
+  margin: 0;
+
   /* new stuff below  */
   position: absolute;
   bottom: 0;
@@ -409,7 +409,7 @@ The first section of our site is an intro, so let's give it a class attribute ca
 Let's add some CSS to increase the `font-size`, `text-align` to the center and also add a bit of `padding`.
 
 ```css
-.intro { 
+.intro {
   font-size: 1.4em;
   text-align: center;
   padding: 20px;
@@ -425,7 +425,7 @@ We can now update our section headers to make them more WOW. Let's add a class c
 </header>
 ```
 
-and 
+and
 
 ```html
 <header class="section-header">
@@ -438,7 +438,7 @@ Time for some magic! Let's add some CSS to make the header a fixed `height` with
 ```css
 .section-header {
   height: 200px;
-  border-top: 3px solid grey; 
+  border-top: 3px solid grey;
   background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/bgs/3.png");
   background-size: cover;
   background-attachment: fixed;
@@ -500,7 +500,7 @@ For our last trick, let's change the `background-color` of our link-items to tha
 
 ### Review
 
-HTML & CSS done! Your page should look something like this [example web page](./part2b-complete.png)
+HTML & CSS done! Your page should look something like this [example web page](./readme-images/part2b-complete.png)
 
 Next we'll learn how to deploy it online. If you've finished early, spend some time customising the designing. This [HTML Color List](https://www.w3schools.com/colors/colors_names.asp) and [Font Awesome Icons List](http://fontawesome.io/icons/) might be useful. Also, we've included 10 different backgrounds, named `1.png` through to `10.png`, try changing the `3.png` part of the background-url in your section-header e.g. `background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/bgs/7.png");` - you can also use your own images that you have online, you just need to copy the link to them.
 
@@ -582,8 +582,8 @@ h1 {
   line-height: 50px;
   letter-spacing: 5px;
   text-align: center;
-  margin: 0; 
-  
+  margin: 0;
+
   /* new stuff below  */
   position: absolute;
   bottom: 0;
@@ -623,11 +623,11 @@ footer {
   height: 230px;
   background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/avatar.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   position: relative;
 }
 
-.intro { 
+.intro {
   font-size: 1.4em;
   text-align: center;
   padding: 20px;
@@ -635,7 +635,7 @@ footer {
 
 .section-header {
   height: 200px;
-  border-top: 3px solid grey; 
+  border-top: 3px solid grey;
   background-image: url("https://raw.githubusercontent.com/wdi-sg/smart-coding-101/master/images/bgs/3.png");
   background-size: cover;
   background-attachment: fixed;
@@ -676,7 +676,7 @@ footer {
 Ok, so we've built our website and now we're going to deploy it online. As this is a 'smart' coding class, we're going to do that in a very clever and easy way. The first step is to setup an account on Github.com.
 
 ### Setting Up Your Github Account
-Github is free to register, so [Signup now](https://github.com/). 
+Github is free to register, so [Signup now](https://github.com/).
 
 Once you have your account, be sure to [upload a profile picture](https://github.com/settings/profile) so that everyone can recognise you, it also let's us do a very cool trick.
 
@@ -689,7 +689,7 @@ Go back to Codepen and let's add this to the CSS for our header. __Tip. Don't fo
   height: 230px;
   background-image: url("https://github.com/your-github-username.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   position: relative;
 }
 ```
@@ -705,14 +705,14 @@ You can also update the __a tag__ in the footer, to actually link to your Github
 ### Exporting Your Website From Codepen
 Now we're ready to upload your website but we need actual html and css files files. Fortunately, we can export them directly from Codepen, just hit the export button in the bottom right corner and chose the Export .zip option. **Make sure you hit the save button first, otherwise your changes won't be exported**
 
-![Export From Codepen](./export-codepen.png)
+![Export From Codepen](./readme-images/export-codepen.png)
 
-We now, have the html and css files we need in order to upload. 
+We now, have the html and css files we need in order to upload.
 
 ### Create A New Github Repository
 We're going to deploy our website to Github, and the first thing we need to do is create a new Repository (you can think of repository as another word for project). Hit the new Repository button in the top right corner of the header bar. 
 
-![New Repo on Github](./new-repo.png)
+![New Repo on Github](./readme-images/new-repo.png)
 
 You want to:
 * name your repository `your-github-username.github.io`, where your-github-username is actual github username that you just created
@@ -720,13 +720,13 @@ You want to:
 * tick the box to create a README file
 * you can leave the rest of the options as default
 
-![New Repo on Github](./new-repo-part2.png)
+![New Repo on Github](./readme-images/new-repo-part2.png)
 
 Once you've have done that you want hit the `upload` button and then drag and drop the `index.html` file and the `css` folder on to the upload window. Once they have uploaded, you can hit the commit button.
 
-![Upload on Github](./upload.png)
+![Upload on Github](./readme-images/upload.png)
 
-![Upload Files to Github](./upload-part2.png)
+![Upload Files to Github](./readme-images/upload-part2.png)
 
 ### Review
 
@@ -736,7 +736,7 @@ That's it! It usually takes about 10 minutes (if you're lucky it might be instan
 
 ## The End
 
-Well done! View your results with pride, smile and play around with some styling ideas of your own :-) 
+Well done! View your results with pride, smile and play around with some styling ideas of your own :-)
 
 We hope you enjoyed the session.
 
