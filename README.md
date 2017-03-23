@@ -6,7 +6,7 @@ We are going to use an online code editor called Codepen to write our HTML and C
 
 So that you can save your progress, hit the `FORK` button on the header bar. This will create your own copy of the template - you can also change the title if you like.
 
-## Part 1: Describing Content with HTML
+## Part 1: Describing Content with HTML (30 minutes)
 Below is some placeholder text for our website - you can update this later with your own details.
 
 ```txt
@@ -37,8 +37,8 @@ Suscipit voluptates rerum tenetur a, porro optio deserunt maxime nisi incidunt a
 Magni dolorum, minus vitae magnam facere aperiam porro pariatur vel! Repudiandae, adipisci voluptatibus aliquam nemo quis rem voluptatem sunt, ex officiis iure autem similique. Cum, sequi. Voluptate ad perspiciatis, modi!
 
 
-Find me on Github: https://github.com/your-github-username
-Find me on LinkedIn: https://github.com/your-linkedin-username
+https://github.com/your-github-username Find me on Github
+https://github.com/your-linkedin-username Find me on LinkedIn
 
 © 2017 Your Name
 
@@ -273,11 +273,12 @@ Next we'll learn about CSS. If you've finished early, spend some time personaliz
 
 ---
 
-## Part 2a: Adding Style To Content With Basic CSS
+## Part 2: Adding Style To Content With CSS (30 minutes)
 Now that we've learnt about CSS, let's add some style to our site. In your CSS file or CSS tab in Codepen let's add the following rules. 
 
+### Basic CSS
 
-### h1
+#### h1
 Let's make our main heading a bit fancy, by giving it a black `background-color` and white text `color`. We can make the `font-size` bigger than normal and also increase the `line-height` and `letter-spacing` to give it a bit more of a wow factor. Finally, let's center out `text-align`. Also, let's set the `margin` to 0, so that our h1 fits more snugly.
 
 ```css
@@ -292,7 +293,7 @@ h1 {
 }
 ```
 
-### h2
+#### h2
 For our section headers we're just going to increase the `font-size` and also `text-align` to the center. Finally, let's change all the text to uppercase with a `text-trasform`.
 
 ```css
@@ -303,7 +304,7 @@ h2 {
 }
 ```
 
-### main
+#### main
 Let's do something fancy for our main section and give it a `linear-gradient` background fading from white to azure, from the top to the bottom of the page.
 
 ```css
@@ -312,7 +313,7 @@ main {
 }
 ```
 
-### section
+#### section
 For our sections, we want to apply some `padding` so the text doesn't touch the edge of the screen. We can also set a `max-width` so that on large screens it doesn't stretch out too much. If we also set the `margin` to 'auto' then the correct amount of margin to keep it centered will also be applied. Finally, whilst the gradient is cool, it makes our text less readable, so let's set the `background-color` to white.
 
 ```css
@@ -324,7 +325,7 @@ section {
 }
 ``` 
 
-### footer
+#### footer
 For our footer, we also want to add some `padding` and let's also add a `border-top` 2 pixels thick, dashed and in the color of a golden rod. Lastly, let's center the text.
 
 ```css
@@ -335,16 +336,16 @@ footer {
 }
 ```
 
-### Review
+#### Review
 
 Your page should look something like this [basic css page](./part2a-complete.png). If it does, then move straight on to part 2b and we'll get more advanced.
 
 ---
 
-## Part 2b: Using Classes For Better Precise Styling
+### Advanced CSS
 To take our design even further, we'll need to go back and add some class attributes to our HTML. We can then select these classes in our CSS and add more specific styling. You'll need to alternate between the HTMl and CSS tabs for the steps below.
 
-### Main Header
+#### Main Header
 Let's add a `main-header` class to the first header on the page, so we know it is the main one. 
 
 We can also do something fancy by wrapping every odd word in our name in a __span tag__ tag with the class `alternate-color`.
@@ -396,7 +397,7 @@ h1 {
 }
 ```
 
-### Intro Section
+#### Intro Section
 The first section of our site is an intro, so let's give it a class attribute called `intro`, so that we can select it and style it in CSS.
 
 ```html
@@ -415,7 +416,7 @@ Let's add some CSS to increase the `font-size`, `text-align` to the center and a
 }
 ```
 
-### Section Headers
+#### Section Headers
 We can now update our section headers to make them more WOW. Let's add a class called `section-header` to each, so that we can select them. Let's also add __span tags__ with the `alternate-color` class to the odd words in our section headings
 
 ```html
@@ -447,7 +448,7 @@ Time for some magic! Let's add some CSS to make the header a fixed `height` with
 }
 ```
 
-### Nav
+#### Nav
 Our last design job is to style the navigation. We'll start by giving our __nav tag__ the class of `social-links`, we'll then give each __a tag__ the class of `link-item`.
 
 > **Bonus.** In the template for this project we added a plugin called Font Awesome, this allows us to add icons to our code. So we've added an icon for github and one linkedIn.
@@ -556,10 +557,10 @@ Next we'll learn how to deploy it online. If you've finished early, spend some t
 </main>
 <footer>
   <nav class="social-links">
-    <a href="https://github.com/jeremiahalex" class="link-item">
+    <a href="https://github.com/your-github-username" class="link-item">
       <i class="fa fa-2x fa-github-square"></i> Find me on Github
     </a>
-    <a href="https://linkedin.com/in/jeremiahalexander" class="link-item">
+    <a href="https://linkedin.com/in/your-linkedin-username" class="link-item">
       <i class="fa fa-2x fa-linkedin-square"></i>Find me on LinkedIn
     </a>
   </nav>
@@ -670,7 +671,7 @@ footer {
 
 ---
 
-## Part 3 - Get It Online
+## Part 3 - Get It Online (15 minutes)
 
 Ok, so we've built our website and now we're going to deploy it online. As this is a 'smart' coding class, we're going to do that in a very clever and easy way. The first step is to setup an account on Github.com.
 
@@ -702,7 +703,7 @@ You can also update the __a tag__ in the footer, to actually link to your Github
 ```
 
 ### Exporting Your Website From Codepen
-Now we're ready to upload your website but we need actual html and css files files. Fortunately, we can export them directly from Codepen, just hit the export button in the bottom right corner and chose the Export .zip option.
+Now we're ready to upload your website but we need actual html and css files files. Fortunately, we can export them directly from Codepen, just hit the export button in the bottom right corner and chose the Export .zip option. **Make sure you hit the save button first, otherwise your changes won't be exported**
 
 ![Export From Codepen](./export-codepen.png)
 
