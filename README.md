@@ -474,7 +474,6 @@ Other than that, we try to make it look like a button by adding some `margin`, `
   flex-wrap: wrap;
 }
 .link-item {
-  width: 300px;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -650,7 +649,6 @@ footer {
 }
 
 .link-item {
-  width: 300px;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -710,7 +708,7 @@ Now we're ready to upload your website but we need actual html and css files fil
 We now, have the html and css files we need in order to upload.
 
 ### Create A New Github Repository
-We're going to deploy our website to Github, and the first thing we need to do is create a new Repository (you can think of repository as another word for project). Hit the new Repository button in the top right corner of the header bar. 
+We're going to deploy our website to Github, and the first thing we need to do is create a new Repository (you can think of repository as another word for project). Hit the new Repository button in the top right corner of the header bar.
 
 ![New Repo on Github](./readme-images/new-repo.png)
 
